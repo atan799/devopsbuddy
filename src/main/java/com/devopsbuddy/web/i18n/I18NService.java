@@ -14,7 +14,7 @@ import java.util.Locale;
 public class I18NService {
 
     /** The application logger */
-    private static final Logger LOG = (Logger) LoggerFactory.getLogger(I18NService.class);
+    private static final Logger LOG = LoggerFactory.getLogger(I18NService.class);
 
     @Autowired
     private MessageSource messageSource;
@@ -24,7 +24,7 @@ public class I18NService {
      * @param messageId the key to the messages resource file
      */
     public String getMessage(String messageId) {
-        LOG.info( "Returning 118n text for messageId{}", messageId);
+        LOG.info("Returning i18n text for messageId {}", messageId);
         Locale locale = LocaleContextHolder.getLocale();
         return getMessage(messageId, locale);
     }
