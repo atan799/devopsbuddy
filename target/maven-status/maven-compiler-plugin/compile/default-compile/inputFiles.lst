@@ -3,7 +3,9 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/IndexController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/PayloadController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Plan.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/PasswordResetTokenRepository.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/AbstractEmailService.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/converters/LocalDateTimeAttributeConverter.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/ContactController.java
@@ -16,6 +18,7 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/domain/frontend/FeedbackPojo.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/enums/PlansEnum.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/SecurityConfig.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/PasswordResetToken.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/i18n/I18NService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/UserRole.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/EmailService.java
@@ -23,6 +26,8 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/UserService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/PlanRepository.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/I18NConfig.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Authority.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/UserSecurityService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/CopyController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/MockEmailService.java

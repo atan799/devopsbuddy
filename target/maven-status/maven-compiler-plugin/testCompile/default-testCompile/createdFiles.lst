@@ -1,3 +1,5 @@
+com/devopsbuddy/test/integration/AbstractIntegrationTest.class
 com/devopsbuddy/DevopsbuddyApplicationTests.class
+com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.class
 com/devopsbuddy/test/integration/UserServiceIntegrationTest.class
-com/devopsbuddy/test/integration/RepositoriesIntegrationTest.class
+com/devopsbuddy/test/integration/UserIntegrationTest.class

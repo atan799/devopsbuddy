@@ -1,3 +1,5 @@
 /Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java
-/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/RepositoriesIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/AbstractIntegrationTest.java
 /Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/DevopsbuddyApplicationTests.java
