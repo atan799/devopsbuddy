@@ -25,9 +25,12 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Role.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/UserService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/PlanRepository.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/PasswordResetTokenService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/I18NConfig.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/I18NService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Authority.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/UserSecurityService.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/ForgotMyPasswordController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/CopyController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/MockEmailService.java

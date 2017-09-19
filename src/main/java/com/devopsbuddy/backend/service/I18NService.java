@@ -1,5 +1,4 @@
-package com.devopsbuddy.web.i18n;
-
+package com.devopsbuddy.backend.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +9,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Locale;
 
+/**
+ * Created by tedonema on 07/03/2016.
+ */
 @Service
 public class I18NService {
 
@@ -19,24 +21,23 @@ public class I18NService {
     @Autowired
     private MessageSource messageSource;
 
-    /*
-     * Returns a message for the given message id and the default local in the session context
-     * @param messageId the key to the messages resource file
-     */
+    /**
+     * Returns a message for the given message id and the default locale in the session context
+     * @param messageId The key to the messages resource file
+     **/
     public String getMessage(String messageId) {
         LOG.info("Returning i18n text for messageId {}", messageId);
         Locale locale = LocaleContextHolder.getLocale();
         return getMessage(messageId, locale);
     }
 
-    /*
-     * Returns a message for the given message id and locale
-     * @param messasgeId The key to the messages resource file
+    /**
+     * Returns a messsage for the given message id and locale
+     * @param messageId The key to the messages resource file
      * @param locale The Locale
-     */
+     **/
     public String getMessage(String messageId, Locale locale) {
         return messageSource.getMessage(messageId, null, locale);
     }
+
 }
-
-

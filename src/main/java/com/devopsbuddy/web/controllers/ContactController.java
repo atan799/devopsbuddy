@@ -36,7 +36,6 @@ public class ContactController {
         return ContactController.CONTACT_US_VIEW_NAME;
     }
 
-
     @RequestMapping(value = "/contact", method = RequestMethod.POST)
     public String contactPost(@ModelAttribute(FEEDBACK_MODEL_KEY) FeedbackPojo feedback) {
         LOG.debug("Feedback POJO content: {}", feedback);

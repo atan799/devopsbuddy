@@ -7,7 +7,8 @@ import org.springframework.mail.SimpleMailMessage;
 
 public class MockEmailService extends AbstractEmailService {
 
-    public static final Logger LOG = LoggerFactory.getLogger(MockEmailService.class);
+    /** The application logger */
+    private static final Logger LOG = LoggerFactory.getLogger(MockEmailService.class);
 
     @Override
     public void sendGenericEmailMessage(SimpleMailMessage message) {

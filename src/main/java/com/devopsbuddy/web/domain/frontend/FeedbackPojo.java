@@ -5,16 +5,12 @@ import java.io.Serializable;
 
 public class FeedbackPojo implements Serializable{
 
-    private static final long serialVersionID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String email;
     private String firstName;
     private String lastName;
     private String feedback;
-
-    public static long getSerialVersionID() {
-        return serialVersionID;
-    }
 
     public String getEmail() {
         return email;
