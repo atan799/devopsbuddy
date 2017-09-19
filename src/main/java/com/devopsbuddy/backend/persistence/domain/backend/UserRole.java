@@ -3,7 +3,9 @@ package com.devopsbuddy.backend.persistence.domain.backend;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
+/**
+ * Created by tedonema on 28/03/2016.
+ */
 @Entity
 @Table(name = "user_role")
 public class UserRole implements Serializable {
@@ -25,12 +27,12 @@ public class UserRole implements Serializable {
     }
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User user;
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id")
     private Role role;
 

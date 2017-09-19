@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.devopsbuddy.test.integration.RepositoriesIntegrationTest" time="0.031" tests="3" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/alex/dev/devopsbuddy"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/alex/dev/devopsbuddy"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/d2/c5lpm1w174b45trrd5_bc3z80000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/alex/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/alex/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/alex"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="alex"/>
+    <property name="java.class.path" value="/Users/alex/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/alex/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/alex/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="createNewUser" classname="com.devopsbuddy.test.integration.RepositoriesIntegrationTest" time="0.021">
+    <error message="could not execute statement; SQL [n/a]; constraint [&quot;UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES (&apos;me@example.com&apos;, 1)&quot;; SQL statement:&#10;insert into user (id, country, description, email, enabled, first_name, last_name, password, phone_number, plan_id, profile_image_url, stripe_customer_id, username) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [23505-190]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES ('me@example.com', 1)"; SQL statement:
+insert into user (id, country, description, email, enabled, first_name, last_name, password, phone_number, plan_id, profile_image_url, stripe_customer_id, username) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [23505-190]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:102)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:231)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:190)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:704)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:156)
+	at org.h2.command.dml.Insert.update(Insert.java:114)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3558)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:98)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:492)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:197)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:181)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:216)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:334)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:289)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:195)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:126)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:84)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:206)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:149)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:811)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:784)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:789)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:293)
+	at com.sun.proxy.$Proxy88.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:439)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:468)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:440)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy93.save(Unknown Source)
+	at com.devopsbuddy.test.integration.RepositoriesIntegrationTest.createNewUser(RepositoriesIntegrationTest.java:89)
+</error>
+    <system-out><![CDATA[3344 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.devopsbuddy.test.integration.RepositoriesIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+3345 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+3345 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e4b54d3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62883f8a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@36665c11, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e49b011, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a709cc7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19a7906c]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.2.RELEASE)
+
+3380 [main] INFO  c.d.t.i.RepositoriesIntegrationTest - Starting RepositoriesIntegrationTest on Alexs-iMac with PID 2604 (/Users/alex/dev/devopsbuddy/target/test-classes started by alex in /Users/alex/dev/devopsbuddy)
+3381 [main] DEBUG c.d.t.i.RepositoriesIntegrationTest - Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+3381 [main] INFO  c.d.t.i.RepositoriesIntegrationTest - The following profiles are active: dev
+3382 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@713e7d9a: startup date [Mon Sep 18 18:49:44 CDT 2017]; root of context hierarchy
+3634 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table plan if exists
+Hibernate: 
+    drop table role if exists
+Hibernate: 
+    drop table user if exists
+Hibernate: 
+    drop table user_role if exists
+Hibernate: 
+    create table plan (
+        id integer not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table role (
+        id integer not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table user (
+        id bigint generated by default as identity,
+        country varchar(255),
+        description varchar(500),
+        email varchar(255),
+        enabled boolean not null,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        phone_number varchar(255),
+        profile_image_url varchar(255),
+        stripe_customer_id varchar(255),
+        username varchar(255),
+        plan_id integer,
+        primary key (id)
+    )
+Hibernate: 
+    create table user_role (
+        id bigint generated by default as identity,
+        role_id integer,
+        user_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    alter table user 
+        add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
+Hibernate: 
+    alter table user 
+        add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)
+Hibernate: 
+    alter table user 
+        add constraint FK_5uoy3ii6ub2nncmmvfgqv0f56 
+        foreign key (plan_id) 
+        references plan
+Hibernate: 
+    alter table user_role 
+        add constraint FK_it77eq964jhfqtu54081ebtio 
+        foreign key (role_id) 
+        references role
+Hibernate: 
+    alter table user_role 
+        add constraint FK_apcc8lxk2xnug8377fatvbn04 
+        foreign key (user_id) 
+        references user
+3675 [main] WARN  o.h.j.i.EntityManagerFactoryRegistry - HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+3725 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {securityConfig=com.devopsbuddy.config.SecurityConfig$$EnhancerBySpringCGLIB$$1de0f026@76d1f6ea}
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login?error']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/logout']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login?logout']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/webjars/**']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/css/**']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/js/**']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/images/**']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/']
+3738 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/about/**']
+3739 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/contact/**']
+3739 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/error/**/*']
+3739 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/console/**']
+3739 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+3740 [main] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes
+3740 [main] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes
+3743 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46fa2a7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@86bf90b, org.springframework.security.web.header.HeaderWriterFilter@37142579, org.springframework.security.web.authentication.logout.LogoutFilter@47c5cbf2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19c1f6f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c13af01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aba7617, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d02ff64, org.springframework.security.web.session.SessionManagementFilter@264576e4, org.springframework.security.web.access.ExceptionTranslationFilter@68f79b7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@415262a0]
+3827 [main] DEBUG c.d.DevopsbuddyApplication - Creating user with username basicUser
+Hibernate: 
+    select
+        count(*) as col_0_0_ 
+    from
+        plan plan0_ 
+    where
+        plan0_.id=? 
+        and 1=1
+Hibernate: 
+    select
+        plan0_.id as id1_0_0_,
+        plan0_.name as name2_0_0_ 
+    from
+        plan plan0_ 
+    where
+        plan0_.id=?
+Hibernate: 
+    select
+        role0_.id as id1_1_1_,
+        role0_.name as name2_1_1_,
+        userroles1_.role_id as role_id2_1_3_,
+        userroles1_.id as id1_3_3_,
+        userroles1_.id as id1_3_0_,
+        userroles1_.role_id as role_id2_3_0_,
+        userroles1_.user_id as user_id3_3_0_ 
+    from
+        role role0_ 
+    left outer join
+        user_role userroles1_ 
+            on role0_.id=userroles1_.role_id 
+    where
+        role0_.id=?
+Hibernate: 
+    insert 
+    into
+        plan
+        (name, id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        role
+        (name, id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        user
+        (id, country, description, email, enabled, first_name, last_name, password, phone_number, plan_id, profile_image_url, stripe_customer_id, username) 
+    values
+        (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        role_.id,
+        role_.name as name2_1_ 
+    from
+        role role_ 
+    where
+        role_.id=?
+Hibernate: 
+    insert 
+    into
+        user_role
+        (id, role_id, user_id) 
+    values
+        (null, ?, ?)
+3839 [main] INFO  c.d.DevopsbuddyApplication - User basicUser created
+3839 [main] INFO  c.d.t.i.RepositoriesIntegrationTest - Started RepositoriesIntegrationTest in 0.491 seconds (JVM running for 4.005)
+Hibernate: 
+    select
+        plan0_.id as id1_0_0_,
+        plan0_.name as name2_0_0_ 
+    from
+        plan plan0_ 
+    where
+        plan0_.id=?
+Hibernate: 
+    insert 
+    into
+        plan
+        (name, id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        role0_.id as id1_1_1_,
+        role0_.name as name2_1_1_,
+        userroles1_.role_id as role_id2_1_3_,
+        userroles1_.id as id1_3_3_,
+        userroles1_.id as id1_3_0_,
+        userroles1_.role_id as role_id2_3_0_,
+        userroles1_.user_id as user_id3_3_0_ 
+    from
+        role role0_ 
+    left outer join
+        user_role userroles1_ 
+            on role0_.id=userroles1_.role_id 
+    where
+        role0_.id=?
+Hibernate: 
+    select
+        user0_.id as id1_2_1_,
+        user0_.country as country2_2_1_,
+        user0_.description as descript3_2_1_,
+        user0_.email as email4_2_1_,
+        user0_.enabled as enabled5_2_1_,
+        user0_.first_name as first_na6_2_1_,
+        user0_.last_name as last_nam7_2_1_,
+        user0_.password as password8_2_1_,
+        user0_.phone_number as phone_nu9_2_1_,
+        user0_.plan_id as plan_id13_2_1_,
+        user0_.profile_image_url as profile10_2_1_,
+        user0_.stripe_customer_id as stripe_11_2_1_,
+        user0_.username as usernam12_2_1_,
+        userroles1_.user_id as user_id3_2_3_,
+        userroles1_.id as id1_3_3_,
+        userroles1_.id as id1_3_0_,
+        userroles1_.role_id as role_id2_3_0_,
+        userroles1_.user_id as user_id3_3_0_ 
+    from
+        user user0_ 
+    left outer join
+        user_role userroles1_ 
+            on user0_.id=userroles1_.user_id 
+    where
+        user0_.id=?
+Hibernate: 
+    select
+        plan0_.id as id1_0_0_,
+        plan0_.name as name2_0_0_ 
+    from
+        plan plan0_ 
+    where
+        plan0_.id=?
+Hibernate: 
+    select
+        plan_.id,
+        plan_.name as name2_0_ 
+    from
+        plan plan_ 
+    where
+        plan_.id=?
+Hibernate: 
+    insert 
+    into
+        user
+        (id, country, description, email, enabled, first_name, last_name, password, phone_number, plan_id, profile_image_url, stripe_customer_id, username) 
+    values
+        (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+3851 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 23505, SQLState: 23505
+3851 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES ('me@example.com', 1)"; SQL statement:
+insert into user (id, country, description, email, enabled, first_name, last_name, password, phone_number, plan_id, profile_image_url, stripe_customer_id, username) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [23505-190]
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateNewPlan" classname="com.devopsbuddy.test.integration.RepositoriesIntegrationTest" time="0.005"/>
+  <testcase name="testCreateNewRole" classname="com.devopsbuddy.test.integration.RepositoriesIntegrationTest" time="0.005"/>
+</testsuite>
