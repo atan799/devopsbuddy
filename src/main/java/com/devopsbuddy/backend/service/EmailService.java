@@ -6,9 +6,9 @@ import org.springframework.mail.SimpleMailMessage;
 
 public interface EmailService {
 
-    public void sendFeedbackEmail(FeedbackPojo feedbackPojo);
+    void sendFeedbackEmail(FeedbackPojo feedbackPojo);
 
-    public void sendGenericEmailMessage(SimpleMailMessage message);
+    void sendGenericEmailMessage(SimpleMailMessage message);
 
 }
 

@@ -1,4 +1,5 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/ProductionConfig.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/exceptions/S3Exception.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/enums/RolesEnum.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/IndexController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/PayloadController.java
@@ -7,8 +8,10 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/AbstractEmailService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/converters/LocalDateTimeAttributeConverter.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/S3Service.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/ContactController.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/StripeService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/ApplicationConfig.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/LoginController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/repositories/RoleRepository.java
@@ -18,8 +21,10 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/domain/frontend/FeedbackPojo.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/enums/PlansEnum.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/config/SecurityConfig.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/domain/frontend/ProAccountPayload.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/PasswordResetToken.java
-/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/i18n/I18NService.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/exceptions/StripeException.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/utils/StripeUtils.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/UserRole.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/EmailService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Role.java
@@ -30,7 +35,10 @@
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/I18NService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Authority.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/UserSecurityService.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/SignupController.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/ForgotMyPasswordController.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/PlanService.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/controllers/CopyController.java
+/Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/web/domain/frontend/BasicAccountPayload.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java
 /Users/alex/dev/devopsbuddy/src/main/java/com/devopsbuddy/backend/service/MockEmailService.java
