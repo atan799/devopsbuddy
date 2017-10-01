@@ -1,0 +1,10 @@
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/AbstractServiceIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/unit/StripeUtilsUnitTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/unit/UserUtilsUnitTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenServiceIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/UserRepositoryIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/AbstractIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/test/integration/StripeIntegrationTest.java
+/Users/alex/dev/devopsbuddy/src/test/java/com/devopsbuddy/DevopsbuddyApplicationTests.java
